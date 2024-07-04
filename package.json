@@ -16,7 +16,7 @@
     "puppeteer",
     "archiving"
   ],
-  "author": "Your Name",
+  "author": "Pudochu",
   "license": "MIT",
   "dependencies": {
     "puppeteer": "^20.7.3"
@@ -29,10 +29,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/webfreeze.git"
+    "url": "https://github.com/pudochu/webfreeze.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/webfreeze/issues"
+    "url": "https://github.com/pudochu/webfreeze/issues"
   },
-  "homepage": "https://github.com/yourusername/webfreeze#readme"
+  "homepage": "https://github.com/pudochu/webfreeze#readme"
 }
