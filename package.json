@@ -5,7 +5,8 @@
   "main": "webfreeze.js",
   "scripts": {
     "start": "node webfreeze.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "test": "echo \"No tests specified\" && exit 0"
   },
   "keywords": [
     "web",
@@ -15,27 +16,23 @@
     "puppeteer",
     "archiving"
   ],
-  "author": "Pudochu",
+  "author": "Your Name",
   "license": "MIT",
   "dependencies": {
     "puppeteer": "^20.7.3"
   },
+  "devDependencies": {
+    "eslint": "^8.44.0"
+  },
   "engines": {
     "node": ">=14.0.0"
   },
-"scripts": {
-  "lint": "eslint .",
-  "test": "echo \"No tests specified\" && exit 0"
-},
- "devDependencies": {
-  "eslint": "^8.0.0"
-  }
   "repository": {
     "type": "git",
-    "url": "https://github.com/pudochu/webfreeze.git"
+    "url": "https://github.com/yourusername/webfreeze.git"
   },
   "bugs": {
-    "url": "https://github.com/pudochu/webfreeze/issues"
+    "url": "https://github.com/yourusername/webfreeze/issues"
   },
-  "homepage": "https://github.com/pudochu/webfreeze#readme"
+  "homepage": "https://github.com/yourusername/webfreeze#readme"
 }
