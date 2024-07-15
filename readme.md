@@ -21,18 +21,20 @@ WebFreeze is a powerful tool that allows you to capture and serve static version
    cd webfreeze
    ```
 3. Install dependencies:
-     ```
-     npm install
-     ```
+   ```
+   npm install
+   ```
 
 ## 📘 Usage
 
 1. Open `webfreeze.js` and set your configuration:
+
    - `SITE_URL`: The URL of the website you want to capture
    - `SAVE_DIRECTORY`: The directory where files will be saved
    - `isDownloadMode`: Set to `true` for initial capture, `false` for serving local files
 
 2. Run the script:
+
    ```
    npm start
    ```
@@ -43,7 +45,7 @@ WebFreeze is a powerful tool that allows you to capture and serve static version
 
 ## 🔧 Configuration
 
-- `isDownloadMode`: 
+- `isDownloadMode`:
   - `true`: Downloads and saves web resources
   - `false`: Serves local files and blocks new requests
 
@@ -56,4 +58,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Contributions, issues, and feature requests are welcome! Feel free to check [issues page](https://github.com/pudochu/webfreeze/issues).
 
 ---
+
 Project Link: [https://github.com/pudochu/webfreeze](https://github.com/pudochu/webfreeze)

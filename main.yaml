@@ -2,9 +2,9 @@ name: WebFreeze CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   build:
@@ -15,17 +15,17 @@ jobs:
         node-version: [18.x]
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - name: Install dependencies
-      run: npm ci
-    - name: Install Puppeteer dependencies
-      run: sudo apt-get install -y libgbm-dev
-    - name: Run linter
-      run: npm run lint || echo "Linting failed but continuing..."
-    - name: Run tests
-      run: npm test || echo "No tests specified"
+      - uses: actions/checkout@v4
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "npm"
+      - name: Install dependencies
+        run: npm ci
+      - name: Install Puppeteer dependencies
+        run: sudo apt-get install -y libgbm-dev
+      - name: Run linter
+        run: npm run lint || echo "Linting failed but continuing..."
+      - name: Run tests
+        run: npm test || echo "No tests specified"
